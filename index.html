@@ -1,0 +1,183 @@
+<!DOCTYPE html >
+<html lang="ko">
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title> AERI PORTFOLIO </title>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+	 <!-- 노토산스 추가 -->
+	 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,700,0,0" />
+	 <!-- 구글아이콘 추가 -->
+	<script src="https://unpkg.com/@phosphor-icons/web"></script>	
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/style.css" />​
+	<script src="js/isotope.pkgd.min.js"></script>
+  <script defer src="js/main.js"></script>	
+</head>
+<body>	
+	<header class="header">
+    <div class="video-container">
+        <video id="toggleVideo" src="img/text1.mp4" autoplay muted loop></video>
+    </div>
+</header>
+<!-- header -->
+<main>
+	<ul>
+		<li class='on'><a href="*">All</a></li>
+		<li><a href=".odd">2D디자인</a></li>
+		<li><a href=".even">영상편집</a></li>
+		<li><a href=".introduction">자기소개서</a></li>
+	</ul>
+	<!-- MAIN TITLE -->
+	<section>
+		<article class='even'>
+			<div>
+				<video src="img/coffee.mp4" autoplay muted loop id="video" onclick="showImage('coffee')"></video>
+				<h2>공익광고</h2>
+				<p>텀블러사용권장 공익광고 제작</p>
+			</div>
+		</article>
+		<article class='odd'>
+			<div>
+				<video src="img/cardnews.mp4" autoplay muted loop id="video" onclick="showImage()"></video>
+				<h2>카드뉴스 디자인</h2>
+				<p>펫티켓을 주제로 제작한 카드뉴스</p>
+			</div>
+		</article>
+		<article class='odd'>
+			<div>
+				<img src="img/info.jpg" alt="info" onclick="showImage('info')">
+				<h2>인포그래픽 디자인</h2>
+				<p>애완동물을 주제로 제작한 인포그래픽</p>
+			</div>
+		</article>
+		<article class='even'>
+			<div>
+				<video src="img/solo.mp4" autoplay muted loop id="video" onclick="showImage('solomov')"></video>
+				<h2>나바쁘게산다</h2>
+				<p>나혼자산다 프로그램 패러디 영상제작</p>
+			</div>
+		</article>
+		<article class='odd'>
+			<div>
+				<img src="img/UXUI-0.jpg" alt="uxui" onclick="showImage('uxui')">
+				<h2>UX,UI디자인</h2>
+				<p>경주국립박물관 모바일페이지 디자인</p>
+			</div>
+		</article>
+		<article class='odd'>
+			<div>
+				<img src="img/web.jpg" alt="web" onclick="showImage('webre')">
+				<h2>웹사이트리뉴얼디자인</h2>
+				<p>경주국립박물관 웹사이트 리뉴얼 디자인</p>
+				<a href="http://ooooo5570.dothome.co.kr/HAR/" class="link-button" target="_blank">리뉴얼 페이지 바로가기</a>
+			</div>
+		</article>
+		<article class='odd'>
+			<div>
+				<img src="img/cafe24.jpg" alt="cafe24" onclick="showImage('cafe24')">
+				<h2>카페24쇼핑몰</h2>
+				<p>카페24쇼핑몰디자인</p>
+				<a href="https://hellobunny.cafe24.com/" class="link-button" target="_blank">쇼핑몰 바로가기</a>
+			</div>
+		</article>
+		<article class='even'>
+			<div>
+				<video src="img/dunkin.mp4" autoplay muted loop id="video" onclick="showImage('dunkin')"></video>
+				<h2>광고모션그래픽</h2>
+				<p>던킨도너츠 광고제작</p>
+			</div>
+		</article>
+		<article class='introduction'style="display: none;">
+			<div>
+				<h1>자기소개서</h1>
+
+			</section>
+			</div>
+		</article>
+	</section>
+
+
+
+	<div class="cardnews" id="cardnews" >
+		<div class="image-container">
+			<span class="material-symbols-outlined" onclick="closeImage()">close</span>
+			<img src="img/cardnews-1.jpg" alt="큰 이미지" id="largeImage">
+	</div>
+	</div>
+<!-- 카드뉴스 -->
+	<div class="info" id="info" style="display: none;">
+		<div class="image-container">
+			<span class="material-symbols-outlined" onclick="closeImage()">close</span>
+			<img src="img/info-1.jpg" alt="큰 이미지" id="largeImage">
+	</div>
+	</div>
+<!-- 인포그래피 -->
+	<div class="solomov" id="solomov"style="display: none;">
+		<div class="image-container">
+			<span class="material-symbols-outlined" onclick="closeImage()">close</span>
+			<img src="img/solomov1.jpg" alt="큰 이미지" id="largeImage">
+			<div class="videowrap">
+				<iframe width="1920" height="1080" src="https://www.youtube.com/embed/XwmUWJxExAg?si=hWOSCa3_MOrJGx5o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		</div>
+	</div>
+	</div>
+<!-- 영상편집 -->
+	<div class="webre" id="webre" style="display: none;">
+		<div class="image-container">
+			<span class="material-symbols-outlined" onclick="closeImage()">close</span>
+			<img src="img/web0.jpg" alt="큰 이미지" id="largeImage">
+			<img src="img/web0-1.jpg" alt="큰 이미지" id="largeImage">
+			<img src="img/web0-2.jpg" alt="큰 이미지" id="largeImage">
+	</div>
+	</div>
+<!-- 웹사이트리뉴얼 -->
+	<div class="cafe24" id="cafe24" style="display: none;">
+		<div class="image-container">
+			<span class="material-symbols-outlined" onclick="closeImage()">close</span>
+			<img src="img/cafe24-1.jpg" alt="큰 이미지" id="largeImage">
+			<img src="img/cafe24-2.jpg" alt="큰 이미지" id="largeImage">
+			<img src="img/cafe24-3.jpg" alt="큰 이미지" id="largeImage">
+			<img src="img/cafe24-4.jpg" alt="큰 이미지" id="largeImage">
+			<img src="img/cafe24-5.jpg" alt="큰 이미지" id="largeImage">
+	</div>
+	</div>
+<!-- 카페24 -->
+<div class="dunkin" id="dunkin" style="display: none;">
+	<div class="image-container">
+		<span class="material-symbols-outlined" onclick="closeImage()">close</span>
+		<img src="img/dunkin-1.jpg" alt="큰 이미지" id="largeImage">
+		<div class="videowrap">
+			<iframe width="1920" height="1080" src="https://www.youtube.com/embed/a-uoKsRy32I?si=rQrIAQxfgFBhmmHY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+<!-- 던킨광고 -->
+<div class="uxui" id="uxui" style="display: none;">
+	<div class="image-container">
+		<span class="material-symbols-outlined" onclick="closeImage()">close</span>
+		<img src="img/UXUI-1.jpg" alt="큰 이미지" id="largeImage">
+		<img src="img/UXUI-2.jpg" alt="큰 이미지" id="largeImage">
+		<img src="img/UXUI-3.jpg" alt="큰 이미지" id="largeImage">
+		<img src="img/UXUI-4.jpg" alt="큰 이미지" id="largeImage">
+		<img src="img/UXUI-5.jpg" alt="큰 이미지" id="largeImage">
+		<img src="img/UXUI-6.jpg" alt="큰 이미지" id="largeImage">
+</div>
+</div>
+<!-- uxui -->
+<div class="coffee" id="coffee" style="display: none;">
+	<div class="image-container">
+		<span class="material-symbols-outlined" onclick="closeImage()">close</span>
+		<img src="img/coffee1.jpg" alt="큰 이미지" id="largeImage">
+		<img src="img/coffee2.jpg" alt="큰 이미지" id="largeImage">
+		<img src="img/coffee3.jpg" alt="큰 이미지" id="largeImage">
+		<div class="videowrap">
+			<iframe width="1920" height="1080" src="https://www.youtube.com/embed/VUWp_MRh4v0?si=wb5CqFFxCHFKD_zW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+<!-- 공익광고 -->
+</main>
+</body>
+</html>
