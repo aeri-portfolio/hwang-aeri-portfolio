@@ -125,8 +125,11 @@ function showImage(source) {
     uxui.style.display = 'none'; // uxui 숨기기
     coffee.style.display = 'none'; // coffee 숨기기
   }
-  
-  
+
+
   document.addEventListener('dragstart', function(e) {
     e.preventDefault(); // 드래그 시작 이벤트 방지
+
 });
+
+

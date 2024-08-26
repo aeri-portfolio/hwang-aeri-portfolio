@@ -137,7 +137,7 @@ main section article{
 	padding: 12px;
 	box-sizing: border-box;
 }
-main section article div{
+main section article div:not(.introduction div){
 	width: 100%;
 	height: 100%;
 	background-color: #fff;
@@ -149,18 +149,17 @@ main section article div{
 }
 main section article div h2{
 	margin-top: 15px;
-	
 	font: bold 23px/1 ;
 	letter-spacing: 1px;
 	color: #444;
 	margin-bottom: 15px;
 }
-main section article div p{
+main section article div p:not(.introduction div p){
 	font:10px/1.2 ;
 	color: #777;
 	margin-bottom: 15px;
 }
-main section article div img{
+main section article div img:not(.introduction div img){
 	width: 100%;
 	cursor: pointer;
 }
@@ -170,9 +169,7 @@ main section article div video{
 }
 
 main section .introduction{
-	width:100%;
-	background-color: #721313;
-	padding: 12px;
+	width:97%;
 }
 
 
@@ -197,7 +194,7 @@ main section .introduction{
 .image-container
 {
 	max-height: 100vh;
-	max-width: 100%;
+	max-width: 100vw;
 	overflow-y: auto;
 	display: flex;
 	flex-wrap: wrap;
@@ -214,16 +211,18 @@ main section .introduction{
 main .solomov .image-container .videowrap,
 main .dunkin .image-container .videowrap,
 main .coffee .image-container .videowrap{
-	width: 100%;
-	height: 1080px;
+	width: 100vw;
+	height: 100vh;
 	display: flex;
 	justify-content: center;
+	margin-bottom: 30px;
 }
 .solomov .image-container .videowrap iframe,
 .dunkin .image-container .videowrap iframe,
 .coffee .image-container .videowrap iframe{
 	max-width:90%;
 	height: 90%;
+	object-fit: contain
 }
 
 .material-symbols-outlined {
