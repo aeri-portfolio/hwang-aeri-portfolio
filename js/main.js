@@ -1,16 +1,29 @@
-document.getElementById('toggleVideo').addEventListener('click', function() {
-    if (window.innerWidth > 899) {
-    const header = document.querySelector('.header'); // 클래스 선택
-    header.classList.toggle('shrink'); // shrink 클래스 토글
+const video = document.getElementById('toggleVideo');
+const header = document.querySelector('.header');
 
-    // 헤더가 줄어들 때 스크롤 허용
-    if (header.classList.contains('shrink')) {
-        document.body.style.overflow = 'auto'; // 스크롤 허용
-    } else {
-        document.body.style.overflow = 'hidden'; // 스크롤 막기
-    }
+// 기존 클릭 이벤트 리스너
+video.addEventListener('click', function() {
+    if (window.innerWidth > 899) {
+        header.classList.toggle('shrink');
+
+        // 헤더가 줄어들 때 스크롤 허용
+        if (header.classList.contains('shrink')) {
+            document.body.style.overflow = 'auto'; // 스크롤 허용
+        } else {
+            document.body.style.overflow = 'hidden'; // 스크롤 막기
+        }
     }
 });
+
+// 4초뒤에 줄어듬
+setTimeout(() => {
+    if (!header.classList.contains('shrink')) {
+        header.classList.add('shrink');
+        document.body.style.overflow = 'auto'; // 스크롤 허용
+    }
+}, 4000); 
+
+
 
 
 window.addEventListener('load',()=>{
