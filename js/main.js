@@ -75,6 +75,8 @@ function showImage(source) {
     const dunkin = document.getElementById('dunkin');
     const uxui = document.getElementById('uxui');
     const coffee = document.getElementById('coffee');
+    const vlog = document.getElementById('vlog');
+    const eventbn = document.getElementById('eventbn');
   
     //div 숨기기
     cardnews.style.display = 'none';
@@ -85,6 +87,8 @@ function showImage(source) {
     dunkin.style.display = 'none';
     uxui.style.display = 'none';
     coffee.style.display = 'none';
+    vlog.style.display = 'none';
+    eventbn.style.display = 'none';
   
     //클릭할때마다 보이게 적용
     if (source === 'info') {
@@ -101,6 +105,10 @@ function showImage(source) {
         uxui.style.display = 'flex'; //uxui
     } else if (source === 'coffee') {
         coffee.style.display = 'flex'; //coffee
+    } else if (source === 'vlog') {
+        vlog.style.display = 'flex'; //vlog
+    } else if (source === 'eventbn') {
+        eventbn.style.display = 'flex'; //eventbn
     } else {
         cardnews.style.display = 'flex'; //카드뉴스
     }
@@ -115,6 +123,8 @@ function showImage(source) {
     const dunkin = document.getElementById('dunkin');
     const uxui = document.getElementById('uxui');
     const coffee = document.getElementById('coffee');
+    const vlog = document.getElementById('vlog');
+    const eventbn = document.getElementById('eventbn');
   
     cardnews.style.display = 'none'; // 카드뉴스 숨기기
     info.style.display = 'none'; // info 숨기기
@@ -124,6 +134,8 @@ function showImage(source) {
     dunkin.style.display = 'none'; // cafe24 숨기기
     uxui.style.display = 'none'; // uxui 숨기기
     coffee.style.display = 'none'; // coffee 숨기기
+    vlog.style.display = 'none'; // vlog 숨기기
+    eventbn.style.display = 'none'; // eventbn 숨기기
   }
 
 

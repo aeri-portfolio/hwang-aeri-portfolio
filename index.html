@@ -32,6 +32,14 @@
 	</ul>
 	<!-- MAIN TITLE -->
 	<section>
+		<article class='odd'>
+			<div>
+				<img src="img/eventbn0.jpg" alt="eventbn" onclick="showImage('eventbn')">
+				<h2>이벤트 배너 디자인</h2>
+				<p>추석이벤트 쇼핑몰 배너 디자인</p>
+			</div>
+		</article>
+		<!-- 디자인-이벤트배너 -->
 		<article class='even'>
 			<div>
 				<video src="img/coffee.mp4" autoplay muted loop id="video" onclick="showImage('coffee')"></video>
@@ -39,6 +47,15 @@
 				<p>텀블러사용권장 공익광고 제작</p>
 			</div>
 		</article>
+		<!-- 영상-공익광고 -->
+		<article class='even'>
+			<div>
+				<img src="img/vlog0.jpg" alt="vlog" onclick="showImage('vlog')">
+				<h2>일상/게임브이로그</h2>
+				<p>일상과 게임플레이 영상제작</p>
+			</div>
+		</article>
+		<!-- 영상-브이로그 -->
 		<article class='odd'>
 			<div>
 				<video src="img/cardnews.mp4" autoplay muted loop id="video" onclick="showImage()"></video>
@@ -46,6 +63,7 @@
 				<p>펫티켓을 주제로 제작한 카드뉴스</p>
 			</div>
 		</article>
+		<!-- 디자인-카드뉴스 -->
 		<article class='odd'>
 			<div>
 				<img src="img/info.jpg" alt="info" onclick="showImage('info')">
@@ -53,6 +71,7 @@
 				<p>애완동물을 주제로 제작한 인포그래픽</p>
 			</div>
 		</article>
+		<!-- 디자인-인포그래피 -->
 		<article class='even'>
 			<div>
 				<video src="img/solo.mp4" autoplay muted loop id="video" onclick="showImage('solomov')"></video>
@@ -60,13 +79,15 @@
 				<p>나혼자산다 프로그램 패러디 영상제작</p>
 			</div>
 		</article>
+		<!-- 영상-나혼산 -->
 		<article class='odd'>
 			<div>
 				<img src="img/UXUI-0.jpg" alt="uxui" onclick="showImage('uxui')">
-				<h2>UX,UI디자인</h2>
+				<h2>모바일UX/UI디자인</h2>
 				<p>경주국립박물관 모바일페이지 디자인</p>
 			</div>
 		</article>
+		<!-- 디자인-uxui -->
 		<article class='odd'>
 			<div>
 				<img src="img/web.jpg" alt="web" onclick="showImage('webre')">
@@ -75,6 +96,7 @@
 				<a href="https://aeri-portfolio.github.io/aeri-redesign/index.html" class="link-button" target="_blank">리뉴얼 페이지 바로가기</a>
 			</div>
 		</article>
+		<!-- 디자인uxui -->
 		<article class='odd'>
 			<div>
 				<img src="img/cafe24.jpg" alt="cafe24" onclick="showImage('cafe24')">
@@ -83,6 +105,7 @@
 				<a href="https://hellobunny.cafe24.com/" class="link-button" target="_blank">쇼핑몰 바로가기</a>
 			</div>
 		</article>
+		<!-- 디자인-쇼핑몰 -->
 		<article class='even'>
 			<div>
 				<video src="img/dunkin.mp4" autoplay muted loop id="video" onclick="showImage('dunkin')"></video>
@@ -90,6 +113,8 @@
 				<p>던킨도너츠 광고제작</p>
 			</div>
 		</article>
+		<!-- 영상-던킨 -->
+
 		<article class='introduction'style="display: none;">
 			<div class="info1">
 				<div class="text-container">
@@ -174,8 +199,8 @@
 										<td>일러스트</td>
 										<td>
 												<div class="gauge">
-														<div class="level" style="width: 70%;">
-															<span class="percentage">70%</span></div> 
+														<div class="level" style="width: 95%;">
+															<span class="percentage">95%</span></div> 
 												</div>
 										</td>
 								</tr>
@@ -183,8 +208,8 @@
 										<td>프리미어프로</td>
 										<td>
 												<div class="gauge">
-														<div class="level" style="width: 65%;">
-															<span class="percentage">65%</span></div>
+														<div class="level" style="width: 70%;">
+															<span class="percentage">70%</span></div>
 												</div>
 										</td>
 								</tr>
@@ -192,8 +217,8 @@
 										<td>에프터이펙트</td>
 										<td>
 												<div class="gauge">
-														<div class="level" style="width: 95%;">
-															<span class="percentage">95%</span></div>
+														<div class="level" style="width: 85%;">
+															<span class="percentage">85%</span></div>
 												</div>
 										</td>
 								</tr>
@@ -232,7 +257,9 @@
 				</div>
 		</article>
 			</section>
+<!-- 자기소개페이지끝 -->
 
+<!-- 여기서부터는 상세페이지내용 -->
 	<div class="cardnews" id="cardnews" >
 		<div class="image-container">
 			<span class="material-symbols-outlined" onclick="closeImage()">close</span>
@@ -240,6 +267,24 @@
 	</div>
 	</div>
 <!-- 카드뉴스 -->
+<div class="eventbn" id="eventbn" >
+	<div class="image-container">
+		<span class="material-symbols-outlined" onclick="closeImage()">close</span>
+		<img src="img/eventbn.jpg" alt="큰 이미지" id="largeImage">
+</div>
+</div>
+<!-- 카드뉴스 -->
+<div class="vlog" id="vlog" >
+	<div class="image-container">
+		<span class="material-symbols-outlined" onclick="closeImage()">close</span>
+		<img src="img/vlog1.jpg" alt="큰 이미지" id="largeImage">
+		<img src="img/vlog2.jpg" alt="큰 이미지" id="largeImage">
+		<div class="videowrap">
+			<iframe width="1920" height="1080" src="https://www.youtube.com/embed/LBG9UMTJpXo?si=UjpuM2xYCHcbE59g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	</div>
+</div>
+</div>
+<!-- 브이로그 -->
 	<div class="info" id="info" style="display: none;">
 		<div class="image-container">
 			<span class="material-symbols-outlined" onclick="closeImage()">close</span>
@@ -290,12 +335,12 @@
 <div class="uxui" id="uxui" style="display: none;">
 	<div class="image-container">
 		<span class="material-symbols-outlined" onclick="closeImage()">close</span>
+		<img src="img/UXUI-5.jpg" alt="큰 이미지" id="largeImage">
+		<img src="img/UXUI-6.jpg" alt="큰 이미지" id="largeImage">
 		<img src="img/UXUI-1.jpg" alt="큰 이미지" id="largeImage">
 		<img src="img/UXUI-2.jpg" alt="큰 이미지" id="largeImage">
 		<img src="img/UXUI-3.jpg" alt="큰 이미지" id="largeImage">
 		<img src="img/UXUI-4.jpg" alt="큰 이미지" id="largeImage">
-		<img src="img/UXUI-5.jpg" alt="큰 이미지" id="largeImage">
-		<img src="img/UXUI-6.jpg" alt="큰 이미지" id="largeImage">
 </div>
 </div>
 <!-- uxui -->
@@ -303,8 +348,6 @@
 	<div class="image-container">
 		<span class="material-symbols-outlined" onclick="closeImage()">close</span>
 		<img src="img/coffee1.jpg" alt="큰 이미지" id="largeImage">
-		<img src="img/coffee2.jpg" alt="큰 이미지" id="largeImage">
-		<img src="img/coffee3.jpg" alt="큰 이미지" id="largeImage">
 		<div class="videowrap">
 			<iframe width="1920" height="1080" src="https://www.youtube.com/embed/VUWp_MRh4v0?si=wb5CqFFxCHFKD_zW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
